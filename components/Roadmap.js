@@ -19,7 +19,7 @@ function Roadmap() {
   })
   
   return (
-    <><div className={`text-center flex flex-col items-center ${styles.left}`}>
+    <><div className={`text-center flex flex-col items-center ${styles.left} m-10 text-center border-2 rounded-3xl`}>
       <h2 className="text-xl font-medium">Roadmap</h2>
       <p className={` text-lg font-light`}>Our roadmap details the steps we're taking to bring our innovative idea of tokenizing debt on the blockchain to fruition. From development and testing, to legal and regulatory compliance, and finally, to expanding our team and obtaining investors. Follow our progress as we work towards creating a more accessible, transparent, and efficient market for debt investments.</p>
     </div><div className="relative w-full md:w-3/4 lg:w-1/2">

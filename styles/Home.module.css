@@ -7,15 +7,32 @@
 	margin-bottom: 2.5rem;
 }
 .left {
-    width: 50%;
+    width: 90%;
     padding: 2rem;
     animation: fadeInLeft 0.5s ease-in;
+	align-self: flex-start;
 }
 .right {
-    width: 50%;
+    width: 90%;
     padding: 2rem;
     animation: fadeInRight 0.5s ease-in;
+	align-self: flex-end;
 }
+
+.divRight {
+	position: absolute;
+	right: 0;
+	
+}
+.divLeft {
+	position: absolute;
+	left: 0;
+	
+}
+.divInner {
+	width: 100%;
+  }
+
 
 @keyframes fadeInLeft {
     from {

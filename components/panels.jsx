@@ -6,7 +6,7 @@ export default function Section({ children, title, description }) {
 			<div>
 				{title && <h3>{title}</h3>}
 				{description && <p>{description}</p>}
-			</div>
+			</div>				
 			{children}
 		</div>
 	);
