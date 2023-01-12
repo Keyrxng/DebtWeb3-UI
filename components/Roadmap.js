@@ -5,13 +5,32 @@ import styles from '../styles/Home.module.css'
 function Roadmap() {
   const [stage, setStage] = useState(1)
   const stages = [
-    'Design and Development', 
-    'Testing and Auditing', 
-    'Prototype and Beta Release', 
-    'Legal and Regulatory Compliance', 
-    'Investor Acquisition', 
-    'Public Release'
+    {
+      name: 'Design and Development',
+      desc: 'This stage involves creating the technical design and architecture of the protocol, and begins the implementation of the code. Our development team will be working on building the smart contracts and infrastructure necessary for the protocol to function.'
+    },
+    {
+      name: 'Testing and Auditing',
+      desc: 'Once the protocol is developed, it will be thoroughly tested to ensure that it functions as intended and is free of bugs. Additionally, we will also engage an independent auditing firm to perform a security audit of the code to ensure that it is secure.'
+    },
+    {
+      name: 'Legal and Regulatory Compliance',
+      desc: 'The protocol will be reviewed by legal experts to ensure that it complies with all relevant laws and regulations. This stage is crucial in order to avoid any potential legal issues and ensure the longevity of our platform.'
+    },
+    {
+      name: 'Prototype and Beta Release',
+      desc: 'In this stage, a working prototype of the protocol will be developed, which will be tested with a small group of beta testers to gather feedback and identify any issues that need to be addressed before public release.'
+    },
+    {
+      name: 'Investor Acquisition',
+      desc: ' This stage will involve obtaining funding from investors to help with development and marketing efforts, as well as recruiting additional team members.'
+    },
+    {
+      name: 'Public Release',
+      desc: 'The final stage, in which the protocol will be publicly released and made available for use.'
+    }
   ]
+
 
   const progressSpring = useSpring({
     width: `${(stage / stages.length) * 100}%`,
@@ -59,8 +78,8 @@ function Roadmap() {
               </div>
 
               <div className={`px-4 py-2 rounded-lg ${index < stage ? 'text-green-500' : 'text-gray-500'}`}>
-                <h3 className="text-lg font-bold text-gray-600">{stageName}</h3>
-                <p className="text-sm font-light text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec ultricies ultricies, nunc elit lacinia nisl, nec ultricies elit nisl nec urna.</p>
+                <h3 className="text-lg font-bold text-gray-600">{stageName.name}</h3>
+                <p className="text-sm font-light text-gray-600">{stageName.desc}</p>
               </div>
             </div>
           ))}
