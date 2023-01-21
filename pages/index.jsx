@@ -23,7 +23,7 @@ import { Discord, Twitter, Telegram, Github, Book } from "@web3uikit/icons";
 
 export default function Home() {
 	return (
-		<div className="flex flex-col items-center bg-slate-900 bg-gradient-to-br from-blue-300">
+		<div className="flex flex-col items-center bg-slate-900 bg-gradient-to-br from-blue-100">
 			<Head>
 				<title>DebtWebFree</title>
 				<link rel="icon" href="/favicon.ico" />
@@ -33,7 +33,7 @@ export default function Home() {
 				/>
 				<script src="https://public.flourish.studio/resources/embed.js"></script>
 			</Head>
-			<nav className="flex flex-row justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-blue-300">
+			<nav className="flex flex-row justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-green-100">
 				<div className="flex flex-row items-center">
 					<h1 className="text-2xl font-medium">DebtWebFree</h1>
 				</div>
@@ -66,7 +66,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<div className="flex flex-row text-xl px-10 justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-blue-300">
+			<div className="flex flex-row text-xl px-10 justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-green-100">
 				<div className="absolute align-middle justify-center flex flex-row w-full">
 					<h2 className="text-2xl font-medium align-middle justify-center text-center flex flex-wrap">
 						Debt Statistics
@@ -110,7 +110,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<div className="flex flex-row text-xl px-10 justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-blue-300">
+			<div className="flex flex-row text-xl px-10 justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-green-100">
 				<div className="absolute align-middle justify-center flex flex-row w-full">
 					<h2 className="text-2xl font-medium align-middle justify-center text-center flex flex-wrap">
 						Accounts by Debt Type
@@ -153,7 +153,7 @@ export default function Home() {
 				></div>
 			</section>
 
-			<div className="flex flex-row text-xl px-10 justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-blue-300">
+			<div className="flex flex-row text-xl px-10 justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-green-100">
 				<div className="absolute align-middle justify-center flex flex-row w-full">
 					<h2 className="text-2xl font-medium align-middle justify-center text-center flex flex-wrap">
 						Average Consumer Debt in 2022
@@ -192,7 +192,7 @@ export default function Home() {
 				</p>
 			</section>
 
-			<div className="flex flex-row text-xl px-10 justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-blue-300">
+			<div className="flex flex-row text-xl px-10 justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-green-100">
 				<div className="absolute align-middle justify-center flex flex-row w-full">
 					<h2 className="text-2xl font-medium align-middle justify-center text-center flex flex-wrap">
 						Facts About Debt
@@ -240,7 +240,7 @@ export default function Home() {
 				</p>
 			</section>
 
-			<div className="flex flex-row text-xl px-10 justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-blue-300">
+			<div className="flex flex-row text-xl px-10 justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-green-100">
 				<div className="absolute align-middle justify-center flex flex-row w-full">
 					<h2 className="text-2xl font-medium align-middle justify-center text-center flex flex-wrap">
 						Protocol DeFi Mechanics
@@ -263,7 +263,7 @@ export default function Home() {
 			<Roadmap />
 
       {/* footer with social links */}
-      <footer className="flex flex-row justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-blue-300">
+      <footer className="flex flex-row mt-16 justify-between w-full p-4 bg-slate-900 bg-gradient-to-br from-blue-300">
           <div className="flex flex-col">
           <h2 className="text-2xl font-medium align-middle justify-center text-center flex flex-wrap">
             Navigation
@@ -294,16 +294,11 @@ export default function Home() {
                   {' '} keyrxng@proton.me
                 </a>
               </p>
-              {/* <li><a href="https://www.aave.com/" className="text-white hover:text-gray-300">Aave</a></li>
-              <li><a href="https://compound.finance/" className="text-white hover:text-gray-300">Compound</a></li>
-              <li><a href="https://www.curve.fi/" className="text-white hover:text-gray-300">Curve</a></li>
-              <li><a href="https://www.synthetix.io/" className="text-white hover:text-gray-300">Synthetix</a></li> */}
-              {/* <img src="https://i.imgur.com/0Z0Z0Z0.png" alt="aave" className="w-20 h-20"/>
-              <img src="https://i.imgur.com/0Z0Z0Z0.png" alt="compound" className="w-20 h-20"/>
-              <img src="https://i.imgur.com/0Z0Z0Z0.png" alt="curve" className="w-20 h-20"/>
-              <img src="https://i.imgur.com/0Z0Z0Z0.png" alt="synthetix" className="w-20 h-20"/> */}
             </ul>
           </nav>
+          <h2 className="text-2xl font-medium align-middle justify-center text-center flex flex-wrap">
+            Partnerships
+          </h2>
           </div>
 
 
@@ -320,25 +315,25 @@ export default function Home() {
             <ul className="flex flex-col">
             <li className="flex flex-row align-middle justify-center items-center">
             <Discord style={{width: '40%', height: '40%'}}/>
-              <a href="https://twitter.com/DebtWallet3" className="text-white hover:text-gray-300">
+              <a href="https://twitter.com/keyrxng" className="text-white hover:text-gray-300">
               Discord
               </a>
               </li>
               <li className="flex flex-row align-middle justify-center items-center">
               <Twitter style={{width: '40%', height: '40%'}}/>
-              <a href="https://twitter.com/DebtWallet3" className="text-white hover:text-gray-300">
+              <a href="https://twitter.com/keyrxng" className="text-white hover:text-gray-300">
               Twitter
               </a>
               </li>
               <li className="flex flex-row align-middle justify-center items-center">
               <Github style={{width: '40%', height: '40%'}}/>
-              <a href="https://twitter.com/DebtWallet3" className="text-white hover:text-gray-300">
+              <a href="https://github.com/Keyrxng" className="text-white hover:text-gray-300">
               Github
               </a>
               </li>
               <li className="flex flex-row align-middle justify-center items-center">
               <Book style={{width: '40%', height: '40%'}}/>
-              <a href="https://twitter.com/DebtWallet3" className="text-white hover:text-gray-300">
+              <a href="https://twitter.com/keyrxng" className="text-white hover:text-gray-300">
               Medium
               </a>
               </li>
